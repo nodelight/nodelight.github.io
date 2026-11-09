@@ -49,3 +49,7 @@ video { width: 100%; aspect-ratio: 16 / 9; border-radius: 14px; background: #000
 .updated { color: var(--muted); font-size: 15px; }
 .contact { margin-block: 28px; }
 footer { border-top: 1px solid var(--line); margin-top: 48px; padding-block: 24px 40px; color: var(--muted); font-size: 14px; }
+/* What you need: the shop link under a hardware card, and the affiliate note. */
+.card .more { display: inline-block; margin-top: 10px; font-weight: 700; font-size: 15px; text-decoration: none; }
+.card .more:hover { text-decoration: underline; }
+.note { color: var(--muted); font-size: 14px; margin-top: -12px; }
