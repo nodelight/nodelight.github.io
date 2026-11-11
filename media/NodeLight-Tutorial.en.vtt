@@ -1,0 +1,292 @@
+WEBVTT
+
+00:01.500 --> 00:04.645
+Hi! One of my hobbies is running the lights in a theatre,
+
+00:04.695 --> 00:07.497
+and over the years I've tried quite a few setups.
+
+00:07.547 --> 00:12.175
+I started with hardware lighting desks, and they were never very practical for me,
+
+00:12.225 --> 00:15.141
+because I'm never standing still in the same place.
+
+00:15.191 --> 00:18.621
+Lately I've been using an iPad with an app called StageLight.
+
+00:18.671 --> 00:22.272
+It's a really good app, and if you have an iPad, I recommend it.
+
+00:22.322 --> 00:28.833
+But I can't always have the iPad with me, and a lot of the time I just need to check something quickly on the spot,
+
+00:28.883 --> 00:33.340
+or set up a scene on stage — and my iPhone would be the perfect tool for that.
+
+00:33.390 --> 00:36.420
+But there was nothing for the iPhone that did the job.
+
+00:36.470 --> 00:39.045
+So that's where this app came from: NodeLight.
+
+00:39.095 --> 00:40.578
+So let's see how it works.
+
+00:43.103 --> 00:46.848
+In this video I build a light show from scratch with NodeLight, in a real room.
+
+00:50.078 --> 00:51.463
+I start with an empty app.
+
+00:51.513 --> 00:54.277
+I tap plus and add the first light, the room light.
+
+00:54.327 --> 00:57.202
+I call it Room Top, and since it only has brightness,
+
+00:57.252 --> 00:59.018
+I keep just the dimmer channel.
+
+01:02.018 --> 01:03.668
+Every light has its own fader.
+
+01:03.718 --> 01:07.236
+I push it up… and look at the room: it lights up straight away.
+
+01:07.286 --> 01:11.761
+If I open the light, I see its DMX address and the exact value of each channel.
+
+01:15.018 --> 01:17.165
+To keep the lights tidy, I use sections.
+
+01:17.215 --> 01:20.564
+I make the first one, called Room, and move Room Top into it.
+
+01:25.018 --> 01:28.147
+The second section is for the front spotlights: Front Spots.
+
+01:31.543 --> 01:33.747
+I add the first spot inside this section.
+
+01:34.167 --> 01:35.701
+It only has a dimmer too.
+
+01:39.518 --> 01:42.744
+With so many lights on the truss, which one is my spot?
+
+01:42.794 --> 01:44.411
+I tap Locate and it flashes.
+
+01:44.461 --> 01:48.817
+If the wrong one flashes, the address isn't right: I fix it and try again.
+
+01:48.867 --> 01:50.713
+Once I've found it, I tap Stop.
+
+02:14.518 --> 02:17.960
+The other spots are the same, so I don't need to do it all again.
+
+02:18.010 --> 02:21.667
+I duplicate the spot, and the copy goes straight to the next address.
+
+02:21.717 --> 02:23.652
+Look: the spot next to it lights up.
+
+02:29.543 --> 02:34.069
+I duplicate and rename until I have all five front spots, each with its own address.
+
+02:44.518 --> 02:47.750
+With Arrange Lights I put the lights in the same order as on the truss,
+
+02:47.800 --> 02:48.800
+left to right.
+
+02:51.853 --> 02:54.097
+Sections I'm not using, I fold away.
+
+02:54.147 --> 02:57.206
+The list stays short and I find everything fast.
+
+03:00.231 --> 03:02.818
+In the Groups tab I make a group with the five spots.
+
+03:03.238 --> 03:06.150
+Now one fader controls them all, and they light up together.
+
+03:12.566 --> 03:13.802
+Now the color lights.
+
+03:14.222 --> 03:16.147
+I make a section called RGB.
+
+03:19.172 --> 03:21.364
+I add Par 1, at DMX address 301.
+
+03:21.414 --> 03:26.037
+Since it's an RGB light, the color channels are already filled in.
+
+03:29.063 --> 03:31.904
+Locate… and there it is, flashing at the end of the truss.
+
+03:42.037 --> 03:43.932
+I pick red and bring up the dimmer.
+
+03:43.982 --> 03:47.260
+The light comes on in red, right as I move it on the phone.
+
+03:52.537 --> 03:54.792
+The round button opens the color wheel.
+
+03:54.842 --> 03:58.574
+I tap a color and the light changes instantly: blue, red, green.
+
+03:58.624 --> 04:01.755
+Underneath there are ready-made colors, to go faster.
+
+04:09.063 --> 04:11.462
+Just like with the spots, I duplicate the Par.
+
+04:11.882 --> 04:13.869
+The copy even keeps the same color.
+
+04:20.562 --> 04:23.781
+And I end up with five Pars, each with its own name and address.
+
+04:36.062 --> 04:37.866
+I make a group with the five Pars.
+
+04:42.732 --> 04:45.835
+Now one color on the group changes all five lights at once.
+
+04:46.255 --> 04:48.834
+And the group's fader sets the brightness of all of them.
+
+04:54.707 --> 04:56.657
+But every light is still independent.
+
+04:56.707 --> 04:58.548
+I can paint one red, another green,
+
+04:58.598 --> 05:01.948
+another blue… and build whatever look I want, light by light.
+
+05:13.707 --> 05:17.310
+And the group's fader only changes the brightness: I bring it up and down,
+
+05:17.360 --> 05:19.186
+and every light keeps its own color.
+
+05:22.186 --> 05:24.299
+When I like a look, I save it as a preset.
+
+05:24.349 --> 05:28.623
+I give it a name, pick the transition time — two seconds here — and the fade style.
+
+05:35.516 --> 05:39.526
+The Grand Master controls the brightness of everything at once: down,
+
+05:39.576 --> 05:41.821
+and everything comes back up together.
+
+05:41.871 --> 05:45.057
+And BO is blackout: everything goes dark in an instant.
+
+05:45.107 --> 05:47.167
+Another tap, and it all comes back.
+
+05:50.192 --> 05:52.576
+I change the colors and save a second preset.
+
+05:58.917 --> 06:03.152
+Now I just tap a preset: the lights glide smoothly from one look to the other.
+
+06:03.202 --> 06:05.289
+Tap the other one, and they come back.
+
+06:09.417 --> 06:13.126
+In Effects I pick a pattern: blink, pulse, chase, sparkle or rainbow.
+
+06:13.176 --> 06:15.360
+I choose the lights or groups it runs on.
+
+06:15.410 --> 06:19.988
+And in Multiple I can mix several patterns in one effect — here, pulse with rainbow.
+
+06:50.942 --> 06:53.302
+I tap play and the effect runs on the lights.
+
+06:53.722 --> 06:55.771
+The fader next to it sets the speed.
+
+07:20.917 --> 07:23.051
+While the effect runs on the color lights,
+
+07:23.101 --> 07:28.306
+I go to Lights and move the Room fader: the room light goes up and down, and the effect keeps going.
+
+07:28.356 --> 07:31.947
+An effect only takes the lights it runs on — the rest are still yours.
+
+07:31.997 --> 07:34.442
+Stop, and everything goes back to where it was.
+
+07:49.917 --> 07:51.098
+When the show is ready,
+
+07:51.148 --> 07:54.739
+I can send it to another phone running NodeLight on the same Wi-Fi.
+
+07:54.789 --> 07:57.626
+Everything goes: lights, groups, presets and effects.
+
+08:00.862 --> 08:03.741
+Here it is with two real phones, an iPhone and an Android.
+
+08:04.161 --> 08:06.651
+I move a fader on one, and the other follows.
+
+08:07.070 --> 08:09.455
+Both control the same lights, at the same time.
+
+08:17.837 --> 08:20.175
+The hardware I used: besides the DMX lights,
+
+08:20.225 --> 08:24.030
+just an Art-Net node — this little box, the Pknight Art-Net WiFi mini.
+
+08:24.080 --> 08:29.080
+It takes the signal from the phone over Wi-Fi and passes it to the lights over the DMX cable,
+
+08:29.130 --> 08:30.980
+and NodeLight finds it on its own.
+
+08:31.030 --> 08:34.075
+If you want the same one, the link is in the description.
+
+08:34.125 --> 08:37.658
+It's an affiliate link, so buying through it supports the channel,
+
+08:37.708 --> 08:39.065
+at no extra cost to you.
+
+08:43.872 --> 08:46.070
+NodeLight is free to try with one light.
+
+08:46.490 --> 08:49.436
+A single purchase unlocks everything — no subscription.
+
+08:52.832 --> 08:55.556
+It's on the App Store, and coming soon to Google Play.
+
+08:55.976 --> 08:58.189
+Links and the manual are in the description.
+
+08:58.609 --> 09:02.233
+And if you like my work, you can always buy me a coffee; the link is there too.
+
+09:02.653 --> 09:04.310
+If you liked it, subscribe.
+
+09:04.730 --> 09:05.730
+See you soon!
