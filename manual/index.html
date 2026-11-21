@@ -472,12 +472,13 @@ html { scroll-padding-top: 64px; }
         <li>Choose <strong>Single</strong> for one pattern, or <strong>Multiple</strong> to tick several that play together.</li>
         <li>Adjust each pattern:
           <ul>
-            <li><strong>Speed</strong> in BPM, 10 to 240, or tap <kbd>Tap</kbd> in time with the music.</li>
+            <li><strong>Speed</strong> from 240 BPM down to 0.1 BPM (one turn every 10 minutes), or tap <kbd>Tap</kbd> in time with the music. Below 10 BPM the time for one beat is shown, for example <span class="mono">↻ 24 s</span>.</li>
             <li><strong>Depth</strong>: how dark the low point gets. For Rainbow it is <strong>Color Strength</strong>.</li>
             <li><strong>Spread</strong>: 0% keeps all lights together, 100% spreads them into a wave.</li>
             <li><strong>Color</strong> (brightness patterns only): <span class="mono">◐</span> keeps each light’s own color, or pick one of eight.</li>
           </ul>
         </li>
+        <li><strong>Brightness</strong>: <strong>Full</strong> opens the lights up to full brightness; <strong>Light’s Level</strong> keeps the effect within each light’s own level (a light at 50% plays between 0 and 50%; a light at 0 stays dark). <strong>Level</strong> turns the whole effect down.</li>
         <li>Tick the groups and lights it should play on.</li>
       </ol>
       <p>The colour dots on screen follow the running effects too, so you can see an effect even with no node connected. While the editor is open, the effect plays on the lights so you see every change (a new one as soon as it has a light). When you leave, it goes back to how it was: <strong>Save</strong> keeps the changes and <strong>Cancel</strong> drops them, and either way the effect is running again only if it was running before. Start it from the Effects list.</p>
@@ -488,8 +489,8 @@ html { scroll-padding-top: 64px; }
         <li>The row’s speed fader moves all of an effect’s patterns together and keeps their ratio.</li>
         <li>Brightness patterns and Rainbow mix: <strong>Blink + Rainbow</strong> makes the rainbow blink. Two brightness patterns multiply, so Pulse + Sparkle twinkles while it breathes.</li>
         <li>A brightness pattern with its own color picked replaces Rainbow’s color.</li>
-        <li>A light that is off or black opens to full white so the effect is always visible. Grand Master and Blackout still apply.</li>
-        <li>Effects are saved in the show but always start stopped when you open the app.</li>
+        <li>With Brightness on <strong>Full</strong>, a light that is off or black opens to full white so the effect is always visible. Grand Master and Blackout still apply.</li>
+        <li>Effects start and stop only with their buttons (or a preset that has effects): leaving the app, locking the screen or closing NodeLight doesn’t stop them.</li>
       </ul>
     </section>
 
@@ -519,7 +520,7 @@ html { scroll-padding-top: 64px; }
       </div>
       <ul>
         <li><strong>Presets:</strong> the buttons stay as they are; the <strong>Grand Master</strong> and <strong>BO</strong> move to a vertical strip on the right. They are only on the Presets tab, so the Lights and Groups desk has room for more faders.</li>
-        <li><strong>Effects:</strong> each effect has its play/stop button and a vertical <strong>speed</strong> fader (10 to 240 BPM; up is faster). Tap the name to open the editor.</li>
+        <li><strong>Effects:</strong> each effect has its play/stop button and a vertical <strong>speed</strong> fader (0.1 to 240 BPM; up is faster). Tap the name to open the editor.</li>
       </ul>
       <div class="note"><p><strong>Rotation lock.</strong> If nothing changes when you turn the phone, turn off the rotation lock (iPhone: Control Center; Android: quick settings).</p></div>
     </section>
@@ -547,7 +548,7 @@ html { scroll-padding-top: 64px; }
 
       <h3>Saving and files</h3>
       <p>Your show saves itself after every change and when you leave the app. The folder button at the top left has <strong>Save</strong>, <strong>Save As…</strong>, <strong>Rename…</strong>, <strong>Open</strong>, <strong>New Show</strong>, <strong>Import File…</strong>, <strong>Export File…</strong> and <strong>Send to Phone…</strong>.</p>
-      <p>Shows are plain files named after the show, for example <code>Demo Club.json</code>. On iPhone they are in the Files app under <strong>On My iPhone → NodeLight → Shows</strong>; on Android they stay inside the app, so use Export and Import to move them. Renaming a show renames its file, and two shows with the same name become <code>Name.json</code> and <code>Name 2.json</code>. On iPhone, if you delete a show’s file in the Files app, NodeLight notices when you return and removes it from the list.</p>
+      <p>Shows are plain files named after the show, for example <code>Demo Club.json</code>. On iPhone they are in the Files app under <strong>On My iPhone → NodeLight → Shows</strong>; on Android they stay inside the app, so use Export and Import to move them. Renaming a show renames its file. If you Save As or Rename to the name of another show, NodeLight asks first and <strong>Replace</strong> overwrites that show; New Show and Duplicate pick a free name (<code>New Show 2</code>). On iPhone, if you delete a show’s file in the Files app, NodeLight notices when you return and removes it from the list.</p>
       <h3>Free and Full Version</h3>
       <p>NodeLight is free to download. The free version controls <strong>one light</strong>, with Groups, Presets, Effects, Locate and sharing all working, so you can try it with your own node. It doesn't save or open shows: when you close the app the light is gone, and only the node settings are kept. A show with more than one light can't be controlled in the free version — NodeLight then offers the Full Version or a new, empty show, and sends nothing to the lights.</p>
       <p>The <strong>Full Version</strong> is a one-time purchase in the app (Setup → <strong>Unlock Full Version</strong>, or whenever you reach a limit). It adds unlimited lights, saving and opening shows, Import and Export, and sending shows to other phones. What you built in the free version is kept as your first show. On a new phone with the same Apple or Google account, tap <strong>Restore Purchase</strong> to get it again for free. Got a code for the Full Version? Tap <strong>Redeem Code</strong> next to it (Setup, or the Full Version screen) and enter it; NodeLight unlocks as soon as the code is accepted.</p>
@@ -555,9 +556,9 @@ html { scroll-padding-top: 64px; }
       <ul>
         <li><strong>Levels and colors</strong> are saved within a second of every change, so they are back when NodeLight opens again, and the lights get them straight away.</li>
         <li><strong>Grand Master and Blackout</strong> are remembered on the phone.</li>
-        <li><strong>Effects</strong> start stopped when you open NodeLight — except after a crash (the app closed while it was on screen): then the effects that were playing carry on.</li>
+        <li><strong>Effects</strong> that were playing carry on when NodeLight opens again; only their buttons stop them.</li>
         <li><strong>Wi-Fi drops:</strong> everything stays as it is in the app, and NodeLight sends again as soon as the network is back. Most nodes hold the last values meanwhile.</li>
-        <li><strong>In the background:</strong> on Android NodeLight keeps sending to the lights and shows a notification (“NodeLight is controlling your lights”, with Stop). An iPhone app can’t keep sending in the background, so the node holds the last values until you return.</li>
+        <li><strong>In the background:</strong> on Android NodeLight keeps sending to the lights and shows a notification (“NodeLight is controlling your lights”, with Stop). An iPhone app can’t keep sending in the background: NodeLight keeps going for as long as iOS allows (usually about 30 seconds), then the node holds the last values until you return, and running effects carry on.</li>
       </ul>
       <div class="note"><p><strong>Back up with Export.</strong> Export File shares the show file by AirDrop, Mail or Files. Import File opens a show file from anywhere, including one exported from another phone — show files are the same on iPhone and Android.</p></div>
     </section>
